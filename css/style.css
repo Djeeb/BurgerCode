@@ -49,6 +49,10 @@ body {
   color: #e7480f;
   font-size: 18px;
 }
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #e7480f;
+}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
@@ -78,3 +82,5 @@ body {
   color: #fff;
   background-color: #c13c0d;
 }
+
+/* ADMIN */
