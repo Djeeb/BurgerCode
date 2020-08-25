@@ -60,7 +60,7 @@
                                         echo '<tr>';
                                         echo '<td>' .$item['name']. '</td>';
                                         echo '<td>' .$item['description']. '</td>';
-                                        echo '<td>' .$item['price']. '</td>';
+                                        echo '<td>' .number_format((float)$item['price'],2,'.',''). '</td>';
                                         echo '<td>' .$item['category']. '</td>';
                                         echo '<td width=340>';
                                         echo '<a class="btn btn-outline-dark" href="view.php?id=' .$item['id']. '"><span class="far fa-eye"></span> Voir</a>  ';
@@ -69,7 +69,7 @@
                                         echo '</td>';
                                         echo '</tr>';                                            
                                     }
-
+                                    Database::disconnect();
                                     ?>
                                 
                                     
